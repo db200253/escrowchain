@@ -1,0 +1,98 @@
+.statusTimeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.statusStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.statusStep::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #ccc;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.completed::after {
+    background: #5e2ca5;
+}
+
+.icon {
+    font-size: 24px;
+    color: white;
+    background-color: rgba(25, 25, 25, 0.8);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.completed .icon {
+    color: #5e2ca5;
+    background-color: white;
+}
+
+.current .icon {
+    color: #ffcc00;
+}
+
+.cancelled .icon {
+    color: white;
+    background-color: red;
+}
+
+.escrowinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.escrowinfo input {
+    width: 95%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    transition: border-color 0.3s ease;
+}
+
+.escrowinfo input:focus {
+    border-color: #5e2ca5;
+    outline: none;
+}
+
+.escrowinfo button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #5e2ca5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 1px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.escrowinfo button:hover {
+    background-color: #4a1f86;
+}

@@ -1,0 +1,105 @@
+.headerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid #003d73;
+    padding: 15px 30px;
+
+    background-color: #5e2ca5;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.appName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.headerSpacing {
+    height: 20vh;
+}
+
+.connectWalletContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.accountContainer {
+    display: flex;
+    align-items: center;
+}
+
+.accountContainer img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.accountContainer div {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.accountContainer button {
+    background-color: #003d73;
+    color: white;
+    border: solid 3px #003d73;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.accountContainer button:hover {
+    background-color: #5e2ca5;
+}
+
+.walletOptionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.walletOptionsContainer button {
+    background-color: #003d73;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: solid 3px #003d73;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    text-align: center;
+}
+
+.walletOptionsContainer button:hover {
+    background-color: #5e2ca5;
+}
+
+.walletOptionsContainer button:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+}
+

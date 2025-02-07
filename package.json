@@ -1,0 +1,21 @@
+{
+  "name": "escrow-smart-contract-fob",
+  "version": "1.0.0",
+  "description": "| Nom    | Prénom   | |--------|----------| | Duvieu | Baptiste |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nomicfoundation/hardhat-ignition": "^0.15.9",
+    "chai": "^4.3.7",
+    "hardhat": "^2.22.18"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "nyc": "^17.1.0"
+  }
+}

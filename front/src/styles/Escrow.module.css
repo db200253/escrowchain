@@ -1,0 +1,57 @@
+.escrowContainer {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.createButton {
+    display: flex;
+    align-items: center;
+    background-color: #5e2ca5;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.createButton svg {
+    margin-right: 5px;
+}
+
+.escrowList {
+    list-style: none;
+    padding: 0;
+}
+
+.escrowItem {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.escrowHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #5e2ca5;
+    color: white;
+    cursor: pointer;
+}
+
+.escrowHeader:hover {
+    background: #4a1e87;
+}

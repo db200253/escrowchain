@@ -1,0 +1,20 @@
+console.log("Les fonds ont été déposés ? ", fundsDeposited);
+const fundsDeposited = await escrow.getFundsDeposited();
+console.log(escrow)
+const escrow = await ethers.getContractAt("Escrow", "0xa16E02E87b7454126E5E10d957A927A7F5B5d2be")
+escrow
+const fundsDeposited = await escrow.getFundsDeposited();
+console.log("Les fonds ont été déposés ? ", fundsDeposited);
+const fundsDeposited = await escrow.fundsDeposited();
+console.log("Vendeur du contrat :", seller);
+const seller = await escrow.getSeller();
+console.log("Statut actuel du contrat :", status);
+const status = await escrow.getStatus();
+console.log(escrow)
+console.log("Solde du contrat : ", await ethers.provider.getBalance(escrow.address)); // Solde en ETH
+console.log("Adresse du contrat : ", escrow.address);
+const escrow = await ethers.getContractAt("Escrow", escrowAddress);
+const escrowAddress = "0xa16E02E87b7454126E5E10d957A927A7F5B5d2be"; // L'adresse de ton contrat
+console.log(await escrow.fundsDeposited());
+const escrow = await ethers.getContractAt("Escrow", "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512");
+const escrow = await ethers.getContractAt("Escrow", "0xa16E02E87b7454126E5E10d957A927A7F5B5d2be")
